@@ -38,7 +38,7 @@ jobs:
     - name: Build production build
       run: npm run build
     - name: Run your tests
-      run: npm run test
+      run: npm run playwright_test
     - name: Get current date
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
